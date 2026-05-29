@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
-public class NumberGuessingGame {
+public class Numbergame {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
@@ -45,7 +45,7 @@ public class NumberGuessingGame {
                 System.out.println("The correct number was: " + randomNumber);
             }
             System.out.print("\nDo you want to play again? (yes/no): ");
-            playAgain = scanner.next();
+            playAgain = sc.next();
 
         } while (playAgain.equalsIgnoreCase("yes"));
         System.out.println("\n🏆 Game Over!");
